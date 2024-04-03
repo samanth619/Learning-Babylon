@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BabylonJS Assigment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/earcut@2.2.4/dist/earcut.min.js"></script>
+  </head>
+  <body>
+    <canvas id="renderCanvas"></canvas>
+
+    <div id="ui">
+      <h3>MODE: <span id="mode">None</span></h3>
+      <div class="actions">
+        <button id="drawButton" title="Draw">
+          <span class="material-symbols-outlined"> draw </span>
+        </button>
+        <button id="extrudeButton" title="Extrude polygon">
+          <span class="material-symbols-outlined"> layers </span>
+        </button>
+        <button id="moveButton" title="Move">
+          <span class="material-symbols-outlined"> back_hand </span>
+        </button>
+        <button id="resizeButton" title="Resize polygon">
+          <span class="material-symbols-outlined"> resize </span>
+        </button>
+        <button id="undoButton" title="Undo">
+          <span class="material-symbols-outlined"> undo </span>
+        </button>
+        <button id="redoButton" title="Redo">
+          <span class="material-symbols-outlined"> redo </span>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

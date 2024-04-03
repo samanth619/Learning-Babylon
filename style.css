@@ -1,0 +1,46 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#renderCanvas {
+  width: 100%;
+  height: 100vh;
+  touch-action: none;
+}
+
+#ui,
+.actions {
+  position: absolute;
+  left: 5px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+#ui h3 {
+  background-color: white;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  margin: -20px 0;
+  border-radius: 5px;
+}
+
+.actions {
+  margin: 15px 0;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
